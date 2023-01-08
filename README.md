@@ -1,4 +1,4 @@
-# Optimus_Tech
+# OptimusTech
 
 Início dos estudos e prática de Javascript, baseado no design encaminhado pela instrutora Giovanna Moeller no desafio #7DaysOfCode
 
