@@ -1,0 +1,89 @@
+.aboutus {
+    text-align: center;
+    font-weight: 600;
+}
+
+/*MAIN CONTAINER*/
+.aboutus__container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.aboutus__main-text {
+    line-height: 24px;
+    color: var(--red);
+}   
+
+.aboutus__main-title {
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+/*CARD*/
+.aboutus__status {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    align-items: center;
+}
+
+.aboutus__card {
+    width: 90%;
+    margin: 1rem;
+}
+
+.aboutus__card-title {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: var(--red);
+    margin: 1rem 0;
+}
+
+.aboutus__card-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray-900);
+}
+
+.aboutus__card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray-400);
+}
+
+@media screen and (min-width: 768px) {
+    .aboutus__card {
+        width: 60%;
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .aboutus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutus__container {
+        width: 55%;
+    }
+    
+    .aboutus__main-title {
+        line-height: 60px;
+        font-size: 48px;
+        padding: 0;
+    }
+
+    .aboutus__status {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: start;
+        padding: 0 6rem;
+    }
+}

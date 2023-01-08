@@ -1,0 +1,186 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 10vh;    
+}
+
+.header__menu {
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+.menu__btn {
+    padding: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    height: 100%;
+}
+
+.header__brand {
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 10vh);
+    transition: 0.5s ease-in-out;
+}
+
+.header__nav-active {
+    left: 0;
+}
+
+.blur {
+    background: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(5px);
+}
+
+.header__navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75%;
+}
+
+.navbar__link {
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--gray-500);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 1s;
+}
+
+.navbar__link-active {
+    border-bottom: 5px solid var(--gray-500);
+    transition: 1s;
+}
+
+.navbar__link:hover, .navbar__link:active {
+    color: var(--red);
+}
+
+.navbar__link-active:hover, .navbar__link-active:active {
+    border-bottom: 5px solid var(--red);
+}
+
+.header__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    gap: 1rem;
+}
+
+#header__label-entrar {
+    font-weight: 500;
+    padding: 1rem;
+    color: var(--gray-500);
+    cursor: pointer;
+    transition: 1s;
+}
+
+#header__label-entrar:hover {
+    color: var(--red);
+}
+
+#header__label-cadastrar {
+    font-weight: 500;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#header__label-cadastrar:hover {
+    color: var(--red);
+    background-color: var(--white);
+}
+
+.header__input {
+    display: none;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .header__container {
+        padding: 0 6rem;
+        gap: 6rem;
+        align-items: center;
+        height: 10vh;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__brand {
+        padding: 1rem 0; 
+    }
+
+    .header__nav {
+        position: relative;
+        flex-direction: row;
+        top: 0;
+        left: 0;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+        }
+
+    .header__nav i::before {
+        content: none;
+    }
+
+    .blur {
+        background: none;
+        backdrop-filter: none;
+    }
+
+    .header__navbar {
+        position: relative;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+
+    .navbar__link-active {
+        border: none;
+        color: var(--red);
+    }
+
+    .navbar__link-active:hover, .navbar__link-active:active  {
+        border: none;
+        color: var(--red);
+    }
+
+    .header__form {
+        justify-content: flex-end;
+    }
+}
