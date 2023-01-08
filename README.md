@@ -6,4 +6,4 @@ Layout: https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?n
 
 Site: https://viniaraujo99.github.io/Optimus_Tech/
 
-Responsividade: 320px | 768px | 1440px
+Responsividade: 320px | 768px | 1024px | 1440px
