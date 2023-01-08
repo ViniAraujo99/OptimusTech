@@ -12,6 +12,8 @@
 .workers__people {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .workers__card {
@@ -56,11 +58,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+
     .workers {
         padding: 0 6rem;
     }
-    
+
     .workers__title {
         font-size: 36px;
         line-height: 44px;
